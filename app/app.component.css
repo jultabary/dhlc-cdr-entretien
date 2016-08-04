@@ -1,0 +1,11 @@
+.menu {
+    position: relative;
+    width: 30%;
+    float: left;  
+}
+
+.body{
+    position : relative;
+    float: right;
+    width:70%;
+}

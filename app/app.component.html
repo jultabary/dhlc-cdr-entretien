@@ -1,16 +1,27 @@
-<ul>
-   <li>Piscine
-       <ul>
-            <li>Cabanon Piscine</li>
-            <li>Bassin</li>
-            <li>Mode Piscine</li>
-       </ul>
-   </li>
-   <li>Maison
-       <ul>
-            <li>Arrivée d'eau (jardin)</li>
-            <li>Arrivée d'eau (maison)</li>
-            <li>Cumulus</li>
-       </ul>
-   </li>
-</ul>
+<h1>{{title}}</h1>
+<main>
+    <div class="menu">
+        <h2>Menu</h2>
+        <ul>
+
+            <li><a [routerLink]="['/home']" routerLinkActive="active">Accueil</a></li>
+            <li>Piscine
+                <ul>
+                    <li>Cabanon Piscine</li>
+                    <li>Bassin</li>
+                    <li>Mode Piscine</li>
+                </ul>
+            </li>
+            <li>Maison
+                <ul>
+                    <li>Arrivée d'eau (jardin)</li>
+                    <li>Arrivée d'eau (maison)</li>
+                    <li>Cumulus</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="body">
+        <router-outlet></router-outlet>
+    </div>
+</main>
