@@ -1,0 +1,9 @@
+<div>
+    <h2>{{title}}</h2>
+    <div>Ce chapitre présente la disposition du cabanon.</div>
+
+    <div *ngFor="let valve of valves" (click)="onSelect(valve)" [class.selected]="valve === selectedValve">
+        <span>{{valve.color}}</span>
+        <span>{{valve.detail}}</span>
+    </div>
+</div>
