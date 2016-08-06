@@ -1,19 +1,11 @@
-export class Valve {
-    private id: number;
+import { ObjectPool } from '../entity/object.entity';
+
+export class Valve extends ObjectPool {
     public color: string;
-    public detail: string;
 
-    public constructor(id: number, color: string, detail: string) {
-        this.id = id;
-        this.color = color;
-        this.detail = detail;
+    public constructor(id: number, color: string, detail: string, image: string) {
+        super(id,detail,image);
+        this.image = image;
     }
 
-    public getId(): number{
-        return this.id;
-    }
-
-    public setId(id: number){
-        this.id = id;
-    }
 }
