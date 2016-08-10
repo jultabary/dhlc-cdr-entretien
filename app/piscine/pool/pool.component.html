@@ -1,4 +1,16 @@
-<div>
+<div class="pool">
     <h2>{{title}}</h2>
-    <div>Ce chapitre présente la disposition du bassin.</div>
+    <div>Ce chapitre présente la disposition de la piscine.</div>
+    <div class="center-side">
+        <h3>Les différentes composants</h3>
+        <nav>
+            <div *ngFor="let objectpool of objectspool" (click)="onSelect(objectpool)" [class.selected]="objectpool === selectedObject"
+                class="item">
+                <div>{{objectpool.name}}</div>
+            </div>
+        </nav>
+    </div>
+    <div *ngIf="selectedObject">
+        <detail-objectpool [selected]="selectedObject"></detail-objectpool>
+    </div>
 </div>

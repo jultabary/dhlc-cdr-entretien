@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 @Component({
     selector: 'cdr-app',
     templateUrl: 'app/app.component.html',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['app/app.component.css','app/menu.css'],
     directives: [ROUTER_DIRECTIVES],
     precompile: [PoolComponent, ShedComponent, CustomComponent, HomeComponent]
 })

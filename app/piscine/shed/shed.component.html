@@ -1,19 +1,19 @@
-<div>
+<div class="shed">
     <h2>{{title}}</h2>
     <div>Ce chapitre présente la disposition du cabanon.</div>
-
-    <h3>Les différentes vannes</h3>
-    <div *ngFor="let valve of valves" (click)="onSelect(valve)" [class.selected]="valve === selectedObject">
-        <span>{{valve.detail}}</span>
+    <div class="center-side">
+        <h3>Les différentes composants</h3>
+        <nav>
+            <div *ngFor="let valve of valves" (click)="onSelect(valve)" [class.selected]="valve === selectedObject" class="item">
+                {{valve.name}}
+            </div>
+            <div *ngFor="let shedComposant of shedComposants" (click)="onSelect(shedComposant)" [class.selected]="shedComposant === selectedObject"
+                class="item">
+                <div>{{shedComposant.name}}</div>
+            </div>
+        </nav>
     </div>
-
-    <h3>Les différentes composants</h3>
-    <div *ngFor="let shedComposant of shedComposants" (click)="onSelect(shedComposant)" [class.selected]="shedComposant === selectedObject">
-        <span>{{shedComposant.detail}}</span>
-    </div>
-
     <div *ngIf="selectedObject">
         <detail-objectpool [selected]="selectedObject"></detail-objectpool>
     </div>
-
 </div>

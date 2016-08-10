@@ -1,0 +1,91 @@
+.accordion {
+  width: 100%;
+  height:80%;
+  padding: 0;
+  background: #333;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.accordion ul {
+  margin: 0;
+  padding: 0;
+}
+.accordion li {
+  display: block;
+}
+
+.has-no-sub{
+  display: block;
+  padding: 0.7em 1em;
+  background: -webkit-linear-gradient(#555, #444);
+  background: linear-gradient(#555, #444);
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  font-family: Verdana;
+}
+
+.has-no-sub:hover{
+  background: -webkit-linear-gradient(#666, #444);
+  background: linear-gradient(#666, #444);
+}
+
+/*.has-no-sub a {
+  padding: 0.7em 2em;
+  text-align: left;
+  position: relative;
+}*/
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.accordion label {
+  cursor: pointer;
+  display: block;
+  padding: 0.7em 1em;
+  overflow: hidden;
+  background: -webkit-linear-gradient(#555, #444);
+  background: linear-gradient(#555, #444);
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  font-family: Verdana;
+}
+.accordion label:hover {
+  background: -webkit-linear-gradient(#666, #444);
+  background: linear-gradient(#666, #444);
+}
+
+.accordion input[type="radio"],
+.accordion input[type="checkbox"] {
+  display: none;
+}
+.accordion .sub > li {
+  cursor: pointer;
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  font-size: 0.875em;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  box-shadow: inset 0 -1px 0 #555;
+}
+
+.accordion .sub > li > a {
+  font-family: Verdana;
+  color: white;
+}
+
+.accordion .sub > li:hover {
+  padding-left: 1.5em;
+  background: rgba(0, 0, 0, 0.1);
+}
+.accordion input:checked + .sub > li {
+  padding: 0.7em 1em;
+  height: 1.4em;
+  opacity: 1;
+}
+

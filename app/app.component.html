@@ -1,22 +1,35 @@
-<h1>{{title}}</h1>
+<header>
+    <table class="table-header">
+        <tr>
+            <td><img src="resources/img/house.png" /></td>
+            <td>
+                <div class="div-h1">
+                    <h1>{{title}}</h1>
+                </div>
+            </td>
+        </tr>
+    </table>
+</header>
 <main>
     <div class="menu">
-        <h2>Menu</h2>
-        <ul>
-
-            <li><a [routerLink]="['/home']" routerLinkActive="active">Accueil</a></li>
-            <li>Piscine
-                <ul>
+        <ul class="accordion">
+            <li class="has-no-sub"><a [routerLink]="['/home']" routerLinkActive="active">Accueil</a></li>
+            <li class="has-sub">
+                <label for="piscine-menu">Piscine</label>
+                <input id=piscine-menu type="checkbox" name="Piscine" />
+                <ul class="sub">
                     <li><a [routerLink]="['/shed']" routerLinkActive="active">Cabanon de la Piscine</a></li>
                     <li><a [routerLink]="['/pool']" routerLinkActive="active">Bassin</a></li>
                     <li><a [routerLink]="['/custom']" routerLinkActive="active">Différents modes</a></li>
                 </ul>
             </li>
-            <li>Maison
-                <ul>
-                    <li>Arrivée d'eau (jardin)</li>
-                    <li>Arrivée d'eau (maison)</li>
-                    <li>Cumulus</li>
+            <li class="has-sub">
+                <label for="maison-menu">Maison</label>
+                <input id=maison-menu type="checkbox" name="Maison" />
+                <ul class="sub">
+                    <li><a [routerLink]="['/home']" routerLinkActive="active">Arrivée d'eau (jardin)</a></li>
+                    <li><a [routerLink]="['/home']" routerLinkActive="active">Arrivée d'eau (maison)</a></li>
+                    <li><a [routerLink]="['/home']" routerLinkActive="active">Cumulus</a></li>
                 </ul>
             </li>
         </ul>

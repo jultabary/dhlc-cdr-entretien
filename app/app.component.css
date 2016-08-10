@@ -1,11 +1,49 @@
 .menu {
     position: relative;
-    width: 30%;
+    width: 20%;
     float: left;  
+    height:100%;
+    background: #333;
+}
+
+.table-header{
+    height: 100%
+}
+
+.div-h1{
+    vertical-align: midlle;
+}
+
+td > img {
+    height: 60px;
+    vertical-align: middle;
+}
+
+main{
+    height:85%;
+    margin: 0 0 0 0;
+}
+
+header{
+    margin: 0 0 0 0;
+    height : 15%;
+    background: linear-gradient(to right,lightskyblue, dodgerblue,lightskyblue);
+}
+
+div > h1{
+    float: right;
+    margin: 0 0 0 0 !important;
+    font-family: Verdana;
+    display:table-cell;
+    vertical-align: middle;
+
 }
 
 .body{
     position : relative;
     float: right;
-    width:70%;
+    width:80%;
+    height:100%;
+    background-color: white;
+    border-left: 5px;
 }

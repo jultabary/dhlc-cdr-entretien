@@ -1,0 +1,45 @@
+.selected{
+    background-color: lightblue !important;
+}
+
+.item{
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 12px;
+    margin-left: 1px;
+    margin-right: 1px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background: linear-gradient(to bottom,silver,grey);
+}
+
+h2{
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+h3{
+    font-family: Verdana;
+    font-size: 16px;
+    background-color: lightskyblue;
+    width:100%;
+}
+
+.item:hover{
+    background: silver;
+}
+
+.center-side{
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%;   
+    text-align: center;
+}
+
+nav{
+    display: inline-block;
+    width: 100%;
+}
