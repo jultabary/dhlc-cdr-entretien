@@ -1,0 +1,15 @@
+<div>
+    <h2>{{title}}</h2>
+    <div>Ce chapitre présente les différentes vannes d'arrivées d'eau.</div>
+    <div class="center-side">
+        <h3>Les différentes vannes</h3>
+        <nav>
+            <div class="item" *ngFor="let valve of valves" (click)="onSelect(valve)" [class.selected]="valve === selectedVanne" class="item">
+                {{valve.name}}
+            </div>
+        </nav>
+    </div>
+    <div *ngIf="selectedVanne">
+        <detail-objectgarden [selected]="selectedVanne"></detail-objectgarden>
+    </div>
+</div>

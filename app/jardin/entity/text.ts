@@ -1,0 +1,4 @@
+export const VALVES:string = "Le \"bac\" contenant les différents robinets d'arrivée d'eau se situe au fond du jardin près de la piscine du voisin. Ce bac contient trois robinets.(En rouge: le robinet central, En bleu: celui de la maison, En vert: celui du jardin)";
+export const CENTRALVALVE:string = "Ce robinet contrôle l'arrivée d'eau général de la propriété. Il est à fermer/ouvrir à chaque déépart/arrivée.";
+export const GARDENVALVE:string = "Ce robinet contrôle l'arrivée d'eau général du jardin. Il est à fermer/ouvrir en fonction du besoin. (Image: en position fermée)";
+export const HOUSEVALVE:string = "Ce robinet contrôle l'arrivée d'eau général de la maison. Il est à fermer/ouvrir à chaque déépart/arrivée. (Image: en position ouvert)";
