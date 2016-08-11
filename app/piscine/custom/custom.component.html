@@ -1,4 +1,31 @@
 <div>
     <h2>{{title}}</h2>
-    <div>Ce chapitre décrit les différents modes de configuration de la piscine.</div>
+    <p>Ce chapitre décrit les différents modes de configuration de la piscine.</p>
+
+    <p>
+        Avant tout chose, il est important de respecter les consignes suivantes pour changer le mode de la piscine.<br/>
+        <li>Mémoriser l'état précédent de la piscine. En cas d'erreurs, il sera plus aisé de revenir en arrière.<br/></li>
+        <li>Avant tout changement, couper le moteur de la piscine, faire les changements, puis le rallumer.</li>
+        <li>Attention ceci est un guide de support, il est important de raisonner avec logique.</li>
+    </p>
+    <table>
+        <tr>
+            <th>Mode</th>
+            <th>Jet d'eau</th>
+            <th>Aspirateur</th>
+            <th>Bonde de fond</th>
+            <th>Skimmer</th>
+            <th>Sélecteur</th>
+            <th>Moteur</th>
+        </tr>
+        <tr *ngFor="let customs of selects">
+            <td>{{customs.mode}}</td>
+            <td [style.color]="customs.jet.styleColor">{{customs.jet.open_str}}</td>
+            <td [style.color]="customs.aspirateur.styleColor">{{customs.aspirateur.open_str}}</td>
+            <td [style.color]="customs.bonde.styleColor">{{customs.bonde.open_str}}</td>
+            <td [style.color]="customs.skimmer.styleColor">{{customs.skimmer.open_str}}</td>
+            <td>{{customs.selector.position}}</td>
+            <td>{{customs.moteur}}</td>
+        </tr>
+    </table>
 </div>

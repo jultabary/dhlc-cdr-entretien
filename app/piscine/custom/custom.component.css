@@ -1,0 +1,45 @@
+p {
+    font-family: Verdana;
+    font-size:12px;
+    padding-left: 20px;
+}
+
+p + p {
+    background-color: red;
+    font-size:14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2{
+    font-family: Verdana;
+}
+
+li{
+    font-family: Verdana;
+    margin-left: 20px;
+}
+
+th{
+    background-color: lightskyblue;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    font-family: Verdana;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;  
+}
+
+table {
+     border-collapse: collapse;
+     margin-left: 20px;
+}
+
+ table, th, td {
+     border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
